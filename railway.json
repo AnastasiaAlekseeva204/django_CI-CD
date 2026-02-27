@@ -1,7 +1,7 @@
 {
   "build": { "builder": "NIXPACKS" },
   "deploy": {
-    "startCommand": "gunicorn config.wsgi:application --workers 5 --threads 2 --timeout 30 --max-requests 10000 --max-requests-jitter 1000",
+    "startCommand": "gunicorn config.asgi:application -k uvicorn.workers.UvicornWorker --bind 127.0.0.1:8000 --workers 4 --timeout 30 --max-requests 10000 --max-requests-jitter 1000",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 3
   }
