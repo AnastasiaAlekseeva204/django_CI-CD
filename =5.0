@@ -1,0 +1,5 @@
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: Django in /home/admin1/.local/lib/python3.10/site-packages (5.2.8)
+Requirement already satisfied: asgiref>=3.8.1 in /home/admin1/.local/lib/python3.10/site-packages (from Django) (3.10.0)
+Requirement already satisfied: sqlparse>=0.3.1 in /home/admin1/.local/lib/python3.10/site-packages (from Django) (0.5.3)
+Requirement already satisfied: typing_extensions>=4 in /home/admin1/.local/lib/python3.10/site-packages (from asgiref>=3.8.1->Django) (4.12.2)
